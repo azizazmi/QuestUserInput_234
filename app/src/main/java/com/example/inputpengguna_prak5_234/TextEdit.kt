@@ -2,6 +2,7 @@ package com.example.inputpengguna_prak5_234
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.material3.MaterialTheme
@@ -43,5 +44,10 @@ fun FormDataDiri(modifier: Modifier){
                 textNama = it
             }
         )
+        Row {
+            gender.forEach { item ->
+
+            }
+        }
     }
 }
