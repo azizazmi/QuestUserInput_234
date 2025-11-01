@@ -148,9 +148,7 @@ fun FormDataDiriLengkap(modifier: Modifier) {
 
     Column(modifier = Modifier
         .fillMaxSize()
-        .background(color = Color.White),
-        verticalArrangement = Arrangement.Top,
-        horizontalAlignment = Alignment.CenterHorizontally
+        .background(color = Color.White)
     ) {
         Box(modifier = Modifier
             .fillMaxWidth()
