@@ -123,3 +123,9 @@ fun FormDataDiri(modifier: Modifier){
         }
     }
 }
+
+
+@Composable
+fun FormDataDiriLengkap(modifier: Modifier) {
+
+}
