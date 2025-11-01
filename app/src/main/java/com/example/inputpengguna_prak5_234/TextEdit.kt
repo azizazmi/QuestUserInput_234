@@ -212,6 +212,22 @@ fun FormDataDiriLengkap(modifier: Modifier) {
                             color = Color.Black,
                             fontSize = 10.sp
                         )
+                        Column(modifier = Modifier) {
+                            status.forEach {
+                                    item ->
+                                Column(modifier = Modifier.selectable(
+                                    selected = txtStatusPernikahan == item,
+                                    onClick = { txtStatusPernikahan = item }
+                                ), horizontalAlignment = Alignment.CenterHorizontally) {
+                                    RadioButton(
+                                        selected = txtStatusPernikahan == item,
+                                        onClick = {
+                                            txtStatusPernikahan = item
+                                        }
+                                    )
+                                    Text(text = item)
+                                }
+                            }
                 }
             }
         }
