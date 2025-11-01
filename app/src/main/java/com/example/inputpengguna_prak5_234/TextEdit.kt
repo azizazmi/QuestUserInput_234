@@ -192,11 +192,11 @@ fun FormDataDiriLengkap(modifier: Modifier) {
                     )
                     Column(modifier = Modifier) {
                         gender.forEach { item ->
-                            Column(
+                            Row(
                                 modifier = Modifier.selectable(
                                     selected = txtJK == item,
                                     onClick = { txtJK = item }
-                                ), horizontalAlignment = Alignment.CenterHorizontally) {
+                                ), verticalAlignment = Alignment.CenterVertically) {
                                 RadioButton(
                                     selected = txtJK == item,
                                     onClick = {
@@ -214,11 +214,11 @@ fun FormDataDiriLengkap(modifier: Modifier) {
                     )
                     Column(modifier = Modifier) {
                         status.forEach { item ->
-                            Column(
+                            Row(
                                 modifier = Modifier.selectable(
                                     selected = txtStatusPernikahan == item,
                                     onClick = { txtStatusPernikahan = item }
-                                ), horizontalAlignment = Alignment.CenterHorizontally) {
+                                ), verticalAlignment = Alignment.CenterVertically) {
                                 RadioButton(
                                     selected = txtStatusPernikahan == item,
                                     onClick = {
