@@ -206,6 +206,11 @@ fun FormDataDiriLengkap(modifier: Modifier) {
                                 Text(text = item)
                         }
                     }
+                        Text(
+                            text = "STATUS PERKAWINAN",
+                            color = Color.Black,
+                            fontSize = 10.sp
+                        )
                 }
             }
         }
