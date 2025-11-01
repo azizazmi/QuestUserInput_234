@@ -195,9 +195,9 @@ fun FormDataDiriLengkap(modifier: Modifier) {
                         gender.forEach { item ->
                             Column(
                                 modifier = Modifier.selectable(
-                                selected = txtJK == item,
-                                onClick = { txtJK = item }
-                            ), horizontalAlignment = Alignment.CenterHorizontally) {
+                                    selected = txtJK == item,
+                                    onClick = { txtJK = item }
+                                ), horizontalAlignment = Alignment.CenterHorizontally) {
                                 RadioButton(
                                     selected = txtJK == item,
                                     onClick = {
@@ -207,29 +207,30 @@ fun FormDataDiriLengkap(modifier: Modifier) {
                                 Text(text = item)
                             }
                         }
-                        Text(
-                            text = "STATUS PERKAWINAN",
-                            color = Color.Black,
-                            fontSize = 10.sp
-                        )
-                        Column(modifier = Modifier) {
-                            status.forEach { item ->
-                                Column(
-                                    modifier = Modifier.selectable(
-                                        selected = txtStatusPernikahan == item,
-                                        onClick = { txtStatusPernikahan = item }
-                                    ), horizontalAlignment = Alignment.CenterHorizontally) {
-                                    RadioButton(
-                                        selected = txtStatusPernikahan == item,
-                                        onClick = {
-                                            txtStatusPernikahan = item
-                                        }
-                                    )
-                                    Text(text = item)
-                                }
+                    }
+                    Text(
+                        text = "STATUS PERKAWINAN",
+                        color = Color.Black,
+                        fontSize = 10.sp
+                    )
+                    Column(modifier = Modifier) {
+                        status.forEach { item ->
+                            Column(
+                                modifier = Modifier.selectable(
+                                    selected = txtStatusPernikahan == item,
+                                    onClick = { txtStatusPernikahan = item }
+                                ), horizontalAlignment = Alignment.CenterHorizontally) {
+                                RadioButton(
+                                    selected = txtStatusPernikahan == item,
+                                    onClick = {
+                                        txtStatusPernikahan = item
+                                    }
+                                )
+                                Text(text = item)
                             }
                         }
                     }
+
                 }
             }
         }
