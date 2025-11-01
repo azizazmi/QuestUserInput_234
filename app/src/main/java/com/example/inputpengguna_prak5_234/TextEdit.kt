@@ -246,6 +246,21 @@ fun FormDataDiriLengkap(modifier: Modifier) {
                             txtAlamat = it
                         }
                     )
+                    Button(
+                        modifier = Modifier
+                            .fillMaxWidth(1f)
+                            .background(color = colorResource(R.color.purple_500)),
+                        //the button is enabled when the user make a selection
+                        enabled = txtAlamat.isNotEmpty(),
+                        onClick = {
+                            nama=txtNama
+                            jk=txtJK
+                            alamat=txtAlamat
+                            statusP=txtStatusPernikahan
+                        }
+                    ) {
+                        Text(stringResource((R.string.submit)))
+                    }
                 }
             }
         }
