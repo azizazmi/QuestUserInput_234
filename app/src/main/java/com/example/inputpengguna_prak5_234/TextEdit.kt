@@ -176,6 +176,15 @@ fun FormDataDiriLengkap(modifier: Modifier) {
                         color = Color.Black,
                         fontSize = 10.sp
                     )
+                    OutlinedTextField(
+                        value = txtNama,
+                        singleLine = true,
+                        shape = MaterialTheme.shapes.large,
+                        modifier = Modifier.width(width = 250.dp),
+                        label = { Text(text = "Isian nama lengkap") },
+                        onValueChange = {
+                            txtNama = it
+                        })
                 }
             }
         }
