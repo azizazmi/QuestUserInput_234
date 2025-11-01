@@ -185,7 +185,8 @@ fun FormDataDiriLengkap(modifier: Modifier) {
                         label = { Text(text = "Isian nama lengkap") },
                         onValueChange = {
                             txtNama = it
-                        })
+                        }
+                    )
                     Text(
                         text = "JENIS KELAMIN",
                         color = Color.Black,
@@ -243,7 +244,8 @@ fun FormDataDiriLengkap(modifier: Modifier) {
                         label = { Text(text = "Alamat") },
                         onValueChange = {
                             txtAlamat = it
-                        })
+                        }
+                    )
                 }
             }
         }
