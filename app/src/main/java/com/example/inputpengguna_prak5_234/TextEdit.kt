@@ -190,6 +190,22 @@ fun FormDataDiriLengkap(modifier: Modifier) {
                         color = Color.Black,
                         fontSize = 10.sp
                     )
+                    Column(modifier = Modifier) {
+                        gender.forEach {
+                                item ->
+                            Column(modifier = Modifier.selectable(
+                                selected = txtJK == item,
+                                onClick = { txtJK = item }
+                            ), horizontalAlignment = Alignment.CenterHorizontally) {
+                                RadioButton(
+                                    selected = txtJK == item,
+                                    onClick = {
+                                        txtJK = item
+                                    }
+                                )
+                                Text(text = item)
+                        }
+                    }
                 }
             }
         }
