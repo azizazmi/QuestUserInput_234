@@ -127,5 +127,8 @@ fun FormDataDiri(modifier: Modifier){
 
 @Composable
 fun FormDataDiriLengkap(modifier: Modifier) {
-
+    var txtNama by remember { mutableStateOf("") }
+    var txtAlamat by remember {mutableStateOf("")}
+    var txtJK by remember {mutableStateOf("")}
+    var txtStatusPernikahan by remember {mutableStateOf("")}
 }
