@@ -131,4 +131,9 @@ fun FormDataDiriLengkap(modifier: Modifier) {
     var txtAlamat by remember {mutableStateOf("")}
     var txtJK by remember {mutableStateOf("")}
     var txtStatusPernikahan by remember {mutableStateOf("")}
+
+    var nama by remember { mutableStateOf("") }
+    var alamat by remember { mutableStateOf("") }
+    var jk by remember {mutableStateOf("")}
+    var status by remember {mutableStateOf("")}
 }
