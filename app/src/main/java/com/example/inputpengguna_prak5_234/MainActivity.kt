@@ -20,7 +20,8 @@ class MainActivity : ComponentActivity() {
         setContent {
             InputPengguna_prak5_234Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    FormDataDiri(modifier = Modifier.padding(innerPadding))
+//                    FormDataDiri(modifier = Modifier.padding(innerPadding))
+                    FormDataDiriLengkap(modifier = Modifier.padding(innerPadding))
                 }
             }
         }
