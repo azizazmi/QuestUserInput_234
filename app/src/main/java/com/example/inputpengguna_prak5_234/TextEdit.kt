@@ -235,7 +235,15 @@ fun FormDataDiriLengkap(modifier: Modifier) {
                         color = Color.Black,
                         fontSize = 10.sp
                     )
-
+                    OutlinedTextField(
+                        value = txtAlamat,
+                        singleLine = true,
+                        shape = MaterialTheme.shapes.large,
+                        modifier = Modifier.width(width = 250.dp),
+                        label = { Text(text = "Alamat") },
+                        onValueChange = {
+                            txtAlamat = it
+                        })
                 }
             }
         }
