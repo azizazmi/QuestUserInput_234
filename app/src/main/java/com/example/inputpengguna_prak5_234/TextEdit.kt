@@ -230,6 +230,11 @@ fun FormDataDiriLengkap(modifier: Modifier) {
                             }
                         }
                     }
+                    Text(
+                        text = "ALAMAT",
+                        color = Color.Black,
+                        fontSize = 10.sp
+                    )
 
                 }
             }
