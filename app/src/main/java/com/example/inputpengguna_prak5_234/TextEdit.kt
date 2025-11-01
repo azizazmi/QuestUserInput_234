@@ -170,7 +170,9 @@ fun FormDataDiriLengkap(modifier: Modifier) {
                 .background(color = Color.White))
             {
                 Column(modifier = Modifier) {
-                    Text(
+                    Text( modifier = Modifier.padding(
+                        top = dimensionResource(R.dimen.padding_small),
+                        start = 5.dp),
                         text = "NAMA LENGKAP",
                         color = Color.Black,
                         fontSize = 20.sp
@@ -185,7 +187,9 @@ fun FormDataDiriLengkap(modifier: Modifier) {
                             txtNama = it
                         }
                     )
-                    Text(
+                    Text( modifier = Modifier.padding(
+                        top = dimensionResource(R.dimen.padding_small),
+                        start = 5.dp),
                         text = "JENIS KELAMIN",
                         color = Color.Black,
                         fontSize = 20.sp
@@ -207,7 +211,9 @@ fun FormDataDiriLengkap(modifier: Modifier) {
                             }
                         }
                     }
-                    Text(
+                    Text( modifier = Modifier.padding(
+                        top = dimensionResource(R.dimen.padding_small),
+                        start = 5.dp),
                         text = "STATUS PERKAWINAN",
                         color = Color.Black,
                         fontSize = 20.sp
@@ -229,7 +235,8 @@ fun FormDataDiriLengkap(modifier: Modifier) {
                             }
                         }
                     }
-                    Text(
+                    Text( modifier = Modifier.padding(top = dimensionResource(R.dimen.padding_small),
+                        start = 5.dp),
                         text = "ALAMAT",
                         color = Color.Black,
                         fontSize = 20.sp
