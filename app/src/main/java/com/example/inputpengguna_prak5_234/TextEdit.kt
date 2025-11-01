@@ -171,7 +171,11 @@ fun FormDataDiriLengkap(modifier: Modifier) {
                 .background(color = Color.White))
             {
                 Column(modifier = Modifier) {
-
+                    Text(
+                        text = "NAMA LENGKAP",
+                        color = Color.Black,
+                        fontSize = 10.sp
+                    )
                 }
             }
         }
