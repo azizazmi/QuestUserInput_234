@@ -1,8 +1,10 @@
 package com.example.inputpengguna_prak5_234
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
@@ -138,4 +140,14 @@ fun FormDataDiriLengkap(modifier: Modifier) {
     var status by remember {mutableStateOf("")}
 
     val gender:List<String> = listOf("Laki-laki", "Perempuan")
+
+    Column(modifier = Modifier
+        .padding(top = 50dp)
+        .fillMaxSize()
+        .background(color = Color.White),
+        verticalArrangement = Arrangement.Top,
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+
+    }
 }
