@@ -246,6 +246,7 @@ fun FormDataDiriLengkap(modifier: Modifier) {
                     )
                     Button(
                         modifier = Modifier
+                            .padding(top = dimensionResource(R.dimen.padding_medium))
                             .fillMaxWidth(1f)
                             .background(color = colorResource(R.color.purple_500)),
                         //the button is enabled when the user make a selection
