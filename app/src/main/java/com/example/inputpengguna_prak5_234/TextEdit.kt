@@ -1,5 +1,6 @@
 package com.example.inputpengguna_prak5_234
 
+import android.R.attr.fontWeight
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -31,6 +32,7 @@ import androidx.compose.ui.layout.ModifierLocalBeyondBoundsLayout
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
@@ -152,15 +154,15 @@ fun FormDataDiriLengkap(modifier: Modifier) {
     ) {
         Box(modifier = Modifier
             .fillMaxWidth()
-            .height(100.dp)
+            .height(120.dp)
             .background(color = colorResource(R.color.purple_200)),
             Alignment.BottomStart
         ){
             Text(
                 text = "Formulir Pendaftaran",
                 color = Color.White,
-                fontSize = 25.sp,
-                )
+                fontSize = 35.sp
+            )
         }
         Box(modifier = Modifier
             .fillMaxSize()
