@@ -173,7 +173,7 @@ fun FormDataDiriLengkap(modifier: Modifier) {
                     Text(
                         text = "NAMA LENGKAP",
                         color = Color.Black,
-                        fontSize = 10.sp
+                        fontSize = 20.sp
                     )
                     OutlinedTextField(
                         value = txtNama,
@@ -188,7 +188,7 @@ fun FormDataDiriLengkap(modifier: Modifier) {
                     Text(
                         text = "JENIS KELAMIN",
                         color = Color.Black,
-                        fontSize = 10.sp
+                        fontSize = 20.sp
                     )
                     Column(modifier = Modifier) {
                         gender.forEach { item ->
@@ -210,7 +210,7 @@ fun FormDataDiriLengkap(modifier: Modifier) {
                     Text(
                         text = "STATUS PERKAWINAN",
                         color = Color.Black,
-                        fontSize = 10.sp
+                        fontSize = 20.sp
                     )
                     Column(modifier = Modifier) {
                         status.forEach { item ->
@@ -232,7 +232,7 @@ fun FormDataDiriLengkap(modifier: Modifier) {
                     Text(
                         text = "ALAMAT",
                         color = Color.Black,
-                        fontSize = 10.sp
+                        fontSize = 20.sp
                     )
                     OutlinedTextField(
                         value = txtAlamat,
