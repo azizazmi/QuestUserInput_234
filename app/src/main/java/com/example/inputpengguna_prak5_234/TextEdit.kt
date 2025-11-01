@@ -185,6 +185,11 @@ fun FormDataDiriLengkap(modifier: Modifier) {
                         onValueChange = {
                             txtNama = it
                         })
+                    Text(
+                        text = "JENIS KELAMIN",
+                        color = Color.Black,
+                        fontSize = 10.sp
+                    )
                 }
             }
         }
