@@ -168,7 +168,12 @@ fun FormDataDiriLengkap(modifier: Modifier) {
             ElevatedCard(modifier = Modifier
                 .fillMaxWidth()
                 .padding(all = 20.dp)
-                .background(color = Color.White)) {  }
+                .background(color = Color.White))
+            {
+                Column(modifier = Modifier) {
+
+                }
+            }
         }
     }
 }
