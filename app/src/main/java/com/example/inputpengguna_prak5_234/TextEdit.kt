@@ -258,7 +258,7 @@ fun FormDataDiriLengkap(modifier: Modifier) {
                             statusP=txtStatusPernikahan
                         }
                     ) {
-                        Text(stringResource((R.string.submit)))
+                        Text(stringResource((R.string.submit)), color = Color.White)
                     }
                 }
             }
