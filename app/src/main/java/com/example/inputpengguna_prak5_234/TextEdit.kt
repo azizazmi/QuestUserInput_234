@@ -144,6 +144,7 @@ fun FormDataDiriLengkap(modifier: Modifier) {
     var status by remember {mutableStateOf("")}
 
     val gender:List<String> = listOf("Laki-laki", "Perempuan")
+    val status:List<String> = listOf("Janda", "Lajang", "Duda")
 
     Column(modifier = Modifier
         .fillMaxSize()
