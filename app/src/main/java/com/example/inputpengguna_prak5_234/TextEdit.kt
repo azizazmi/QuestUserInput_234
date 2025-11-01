@@ -155,7 +155,11 @@ fun FormDataDiriLengkap(modifier: Modifier) {
             .height(100.dp)
             .background(color = colorResource(R.color.purple_200))
         ){
-
+            Text(
+                text = "Formulir Pendaftaran",
+                color = Color.White,
+                fontSize = 25.sp,
+                )
         }
     }
 }
