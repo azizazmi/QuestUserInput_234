@@ -161,5 +161,10 @@ fun FormDataDiriLengkap(modifier: Modifier) {
                 fontSize = 25.sp,
                 )
         }
+        Box(modifier = Modifier
+            .fillMaxSize()
+            .background(color = Color.White)) {
+
+        }
     }
 }
