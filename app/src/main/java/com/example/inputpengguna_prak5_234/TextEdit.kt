@@ -136,4 +136,6 @@ fun FormDataDiriLengkap(modifier: Modifier) {
     var alamat by remember { mutableStateOf("") }
     var jk by remember {mutableStateOf("")}
     var status by remember {mutableStateOf("")}
+
+    val gender:List<String> = listOf("Laki-laki", "Perempuan")
 }
