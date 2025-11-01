@@ -153,7 +153,8 @@ fun FormDataDiriLengkap(modifier: Modifier) {
         Box(modifier = Modifier
             .fillMaxWidth()
             .height(100.dp)
-            .background(color = colorResource(R.color.purple_200))
+            .background(color = colorResource(R.color.purple_200)),
+            Alignment.BottomStart
         ){
             Text(
                 text = "Formulir Pendaftaran",
