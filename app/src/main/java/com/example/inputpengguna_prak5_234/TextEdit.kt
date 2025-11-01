@@ -181,7 +181,9 @@ fun FormDataDiriLengkap(modifier: Modifier) {
                         value = txtNama,
                         singleLine = true,
                         shape = MaterialTheme.shapes.large,
-                        modifier = Modifier.width(width = 250.dp),
+                        modifier = Modifier
+                            .padding(all = dimensionResource(R.dimen.padding_small))
+                            .fillMaxWidth(),
                         label = { Text(text = "Isian nama lengkap") },
                         onValueChange = {
                             txtNama = it
@@ -245,7 +247,9 @@ fun FormDataDiriLengkap(modifier: Modifier) {
                         value = txtAlamat,
                         singleLine = true,
                         shape = MaterialTheme.shapes.large,
-                        modifier = Modifier.width(width = 250.dp),
+                        modifier = Modifier
+                            .padding(all = dimensionResource(R.dimen.padding_small))
+                            .fillMaxWidth(),
                         label = { Text(text = "Alamat") },
                         onValueChange = {
                             txtAlamat = it
