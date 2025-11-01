@@ -2,6 +2,7 @@ package com.example.inputpengguna_prak5_234
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
@@ -26,9 +27,11 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 
 @Composable
 fun FormDataDiri(modifier: Modifier){
@@ -142,12 +145,17 @@ fun FormDataDiriLengkap(modifier: Modifier) {
     val gender:List<String> = listOf("Laki-laki", "Perempuan")
 
     Column(modifier = Modifier
-        .padding(top = 50dp)
         .fillMaxSize()
         .background(color = Color.White),
         verticalArrangement = Arrangement.Top,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
+        Box(modifier = Modifier
+            .fillMaxWidth()
+            .height(100.dp)
+            .background(color = colorResource(R.color.purple_200))
+        ){
 
+        }
     }
 }
